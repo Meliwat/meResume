@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Muhammed Eliwat - Game Developer, Software Engineer, and Computer Science Student">
+    <title>Muhammed Eliwat | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">ME</div>
+            <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="mobile-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <!-- To use your own photo, replace the src URL below with a link to your image or a local file path (e.g., 'images/myphoto.jpg') -->
+            <img src="Screenshot 2025-05-13 at 9.25.14 PM.png" alt="Profile photo of Muhammed Eliwat" class="profile-photo">
+            <h1>MUHAMMED ELIWAT</h1>
+            <h2 class="hero-subtitle">Game Developer & Software Engineer</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/muhammed-eliwat-62bb6b299/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Meliwat" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Computer Science student at Wayne State University with extensive experience in game development and software engineering. Passionate about creating efficient, user-friendly applications and solving complex problems.</p>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> 18811 Church Hill Drive, Riverview, MI 48193</p>
+                <p><i class="fas fa-phone"></i> (510) 648-1525</p>
+                <p><i class="fas fa-envelope"></i> muhammedeliwat@gmail.com</p>
+            </div>
+            <a href="Meliwat%20Resume%20(1).pdf" class="resume-btn" download aria-label="Download Muhammed Eliwat Resume"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Game Developer</h3>
+                <p class="company">Godum Games | Remote</p>
+                <p class="date">May 2020 - Present</p>
+                <ul>
+                    <li>Designed, developed, and released a mobile game for both iOS and Android using Unity and C#</li>
+                    <li>Implemented in-app purchases (IAP) and Google Ads, contributing to over 100+ downloads</li>
+                    <li>Optimized game performance by improving asset management and reducing memory footprint by 20%</li>
+                    <li>Implemented unit and integration testing to ensure bug-free releases</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Discord Bot Project" class="project-img">
+                    <h3>Transaction Handler Discord Bot</h3>
+                    <p class="tech-stack">Python, APIs, Automation, Cloud Services</p>
+                    <p class="date">Sep. 2023</p>
+                    <ul>
+                        <li>Built an automated system handling 1,000+ active subscription-based interactions</li>
+                        <li>Integrated Text-OCR and RESTful APIs with 95% accuracy rate</li>
+                        <li>Improved response times by 25% through webhook-based notifications</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Image Classification Project" class="project-img">
+                    <h3>Image Classification Project</h3>
+                    <p class="tech-stack">PyTorch, CNN, Machine Learning, Data Augmentation</p>
+                    <p class="date">Mar. 2024</p>
+                    <ul>
+                        <li>Implemented CNN model with 92% accuracy using advanced data augmentation</li>
+                        <li>Reduced model training time by 35% through GPU-acceleration</li>
+                        <li>Utilized PyTorch's autograd for custom loss functions and optimizers</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Assignment Reminders Application" class="project-img">
+                    <h3>Assignment Reminders Application</h3>
+                    <p class="tech-stack">Python Flask, Canvas APIs, SQLite</p>
+                    <p class="date">Present</p>
+                    <ul>
+                        <li>Building Flask application for student assignment notifications via SMS</li>
+                        <li>Integrating with Canvas APIs and SQLite database</li>
+                        <li>Implementing automated notification system using API polling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-bar-group">
+                        <div class="skill-bar-label">Python</div>
+                        <div class="skill-bar" data-skill="95" aria-label="Python proficiency 95%"><span></span></div>
+                        <div class="skill-bar-label">C++</div>
+                        <div class="skill-bar" data-skill="85" aria-label="C++ proficiency 85%"><span></span></div>
+                        <div class="skill-bar-label">C</div>
+                        <div class="skill-bar" data-skill="80" aria-label="C proficiency 80%"><span></span></div>
+                        <div class="skill-bar-label">JavaScript</div>
+                        <div class="skill-bar" data-skill="75" aria-label="JavaScript proficiency 75%"><span></span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>Unity</li>
+                        <li>PyTorch</li>
+                        <li>Flask</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Developer Tools</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>VS Code</li>
+                        <li>Google Cloud</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Libraries</h3>
+                    <ul>
+                        <li>pandas</li>
+                        <li>NumPy</li>
+                        <li>Matplotlib</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <a href="mailto:muhammedeliwat@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email</p>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <p>LinkedIn</p>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <p>GitHub</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Muhammed Eliwat. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
