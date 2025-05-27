@@ -641,21 +641,71 @@ button, a, .project-card, .contact-item {
   cursor: pointer;
 }
 
-/* Custom trailing cursor */
+/* Remove all custom cursor code */
 .custom-cursor {
-  position: fixed;
-  top: 0; left: 0;
-  width: 20px; height: 20px;
-  border-radius: 50%;
-  background: rgba(43,108,176,0.18);
-  pointer-events: none;
-  z-index: 9999;
-  transition: background 0.2s, transform 0.08s;
-  mix-blend-mode: multiply;
+  display: none;
 }
-.custom-cursor.active {
-  background: rgba(43,108,176,0.38);
-  transform: scale(1.4);
+
+/* Enhanced Interests Section */
+.interests-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interests-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px var(--shadow);
+}
+
+.interests-content p {
+  margin-bottom: 1.8rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.interests-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.interests-content li {
+  margin-bottom: 1rem;
+  padding: 1.2rem;
+  background: var(--secondary);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.interests-content li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.interests-content li:before {
+  content: "→";
+  color: var(--primary);
+  position: absolute;
+  left: 1rem;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.interests-content li:hover:before {
+  transform: translateX(5px);
 }
 
 /* Scrollspy active nav link */
@@ -663,4 +713,9 @@ button, a, .project-card, .contact-item {
   color: var(--accent) !important;
   font-weight: 700;
   text-decoration: underline;
+}
+
+.skills-content {
+  max-width: 800px;
+  margin: 0 auto;
 } 
