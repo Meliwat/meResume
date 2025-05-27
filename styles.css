@@ -718,4 +718,9 @@ button, a, .project-card, .contact-item {
 .skills-content {
   max-width: 800px;
   margin: 0 auto;
+}
+
+/* Remove cursor animation */
+.cursor, .custom-cursor {
+  display: none !important;
 } 
